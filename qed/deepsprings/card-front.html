@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <link href="../../_global/css/global.css" rel="stylesheet" />
+  <link href="../../_global/css/card.css" rel="stylesheet" />
+  <link href="card-front.css" rel="stylesheet" />
+  <script type="text/javascript" src="../../_global/js/general.js"></script>
+  <script src="../../_global/js/card.js" defer></script>
+</head>
+<body>
+
+  <quick-card 
+    speed="fast"
+    cost="0" 
+    name="Boon of the Wellspring"
+    image="art-card-wellspring.png"
+    elements="sun,water,plant"
+    range="none"
+    target="any {spirit}"
+    target-title="TARGET"
+    artist-name="">
+    <rules>
+      If you target another Spirit, they gain 1 Energy.
+      <br>
+      In one of target Spirit's lands:
+      Target Spirit gains {gain-range-1} when targeting from that land.
+    </rules>
+  </quick-card>
+
+  <quick-card
+    speed="slow"
+    cost="0"
+    name="Return to Headwaters"
+    image="art-card-headwaters.png"
+    elements="water,earth,plant"
+    range="1"
+    target="{no-blight}"
+    artist-name="">
+    <rules>
+      Gather up to 2 {dahan}.
+      <br>
+      If {dahan} are then present,
+      choose a Spirit. They may add 1 of their Destroyed {presence}.
+    </rules>
+  </quick-card>
+
+  <quick-card
+    speed="slow"
+    cost="1"
+    name="Tainted Waters"
+    image="art-card-taintedwater.png"
+    elements="moon,water,earth,animal"
+    range="0"
+    target="ANY"
+    artist-name="">
+    <rules>
+      1 Damage per Sequestered {blight}.
+      <br>
+      Move 1 Sequestered {blight} to target land.
+    </rules>
+  </quick-card>
+
+  <quick-card
+    speed="fast"
+    cost="2"
+    name="Disappearing Stream"
+    image="art-card-disappearingstream.png"
+    elements="air,water,earth"
+    range="0"
+    target="ANY"
+    artist-name="">
+    <rules>
+      Push up to 3 {explorer} to a single land.
+      <br>
+      If that land has your {presence}, 1 {fear} and Destroy 1 {explorer} there.
+    </rules>
+  </quick-card>
+
+</body>
+</html>

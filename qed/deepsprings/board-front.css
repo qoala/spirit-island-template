@@ -1,0 +1,40 @@
+
+/* Special Rules */
+
+.seq-cost-zone{
+    display: block;
+}
+
+.seq-cost-zone section-title{
+    display: inline;
+}
+
+.seq-cost-zone icon.seqcost{
+    width: 180px;
+    height: 90px;
+    float: right;
+    margin-right: 150px;
+    margin-top: -20px;
+    margin-bottom: -70px;
+}
+
+/* Growth */
+
+/* growth section-title{
+    padding-top: 20px;
+} */
+
+
+/* Presence Tracks*/
+
+presence-node icon.sequestration {
+    /* Blight: 12mm, Presence 15mm, Track Circle 17mm */
+    width: 90px;
+    height: 90px;
+}
+
+presence-node icon-multi-element icon.sequestration {
+    margin-left: -20px;
+    margin-top: -40px;
+}
+

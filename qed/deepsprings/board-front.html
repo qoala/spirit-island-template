@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="../../_global/css/global.css" rel="stylesheet" />
+    <link href="../../_global/css/board_front.css" rel="stylesheet" />
+    <link href="board-front.css" rel="stylesheet" />
+    <script type="text/javascript" src="../../_global/js/general.js"></script>
+    <script type="text/javascript" src="../../_global/js/board_front.js"></script>
+
+<!-- 	Custom Icons. Instructions 
+				1) place image in same folder as HTLM (this file) 
+				2) replace demo file name with your file name below 
+				3) use custom1, custom2, or custom3 in your HTLM to reference 
+-->
+	<style>
+	icon.sequestration{background-image: url('art-icon-sequestration.png'); }
+	icon.seqcost{background-image: url('art-icon-seqcost.png'); }
+	</style>
+
+</head>
+
+<body>
+
+  <board spirit-image="art-spirit.png" spirit-image-scale="100%"  spirit-border="art-tracks.png">
+    
+    <spirit-name>
+      Deep Springs
+    </spirit-name>
+	<artist-name>
+	wombo.art
+	</artist-name>
+
+    <special-rules-container>
+      <div class="seq-cost-zone"><section-title>SPECIAL RULES</section-title> <span class="seq-cost">{seqcost}</span></div>
+      <special-rules-subtitle>Sequestration</special-rules-subtitle>
+      <special-rule>
+        Your abilities can Sequester {blight}. Move Sequestered {blight} to your spirit board. When available, place 1 Sequestered {blight} on each revealed {sequestration} on your presence tracks.
+        <br>
+        For each Sequestered {blight} not on your presence tracks, -1 Energy income/turn.
+      </special-rule>
+      <special-rules-subtitle>Permeable Fractures</special-rules-subtitle>
+      <special-rule>
+        When targeting a land with a Power, you may Sequester 1 {blight} from target land to gain {gain-range-1} for that Power, before evaluating Range and targeting requirements.
+      </special-rule>
+    </special-rules-container>
+
+    <right>
+		<!-- GROWTH  
+			Examples include: reclaim-all; reclaim-one; move-presence(1); gain-energy(2);
+			Gaining Elements: gain-element(water,fire); gain-element(water,2);
+			Adding Presence: add-presence(1); add-presence(1,jungle); add-presence(2,town,city,blight,or); add-presence(2,strife,city,and);
+			
+			Sub-Groups of Growth are possible (think Lure)
+			Example: <sub-growth title="pick one of:" bordered>   here 'bordered' creates the double line border
+					 </sub-growth>
+		-->
+		<growth title="Growth (Pick One)">
+			<growth-group values="reclaim-all;add-presence(0)"></growth-group>
+			<growth-group values="gain-power-card;add-presence(1)"></growth-group>
+			<growth-group values="add-presence(3);gain-energy(3)"></growth-group>
+		</growth>
+
+		<presence-tracks>
+		  <energy-track banner="art-tracks.png" banner-v-scale="50%" values="1,sequestration+2,sequestration+water,4,sequestration+earth,sequestration+5,7"></energy-track>
+		  <card-play-track banner="art-tracks.png" banner-v-scale="50%" values="2,sequestration,3,sequestration+reclaim-one,4,sequestration+5"></card-play-track>
+		</presence-tracks>
+
+		<!-- INNATE POWERS  
+			To create powers which scale with elements ("For Each"), use the shortcut {fire,2} to include the numeral
+			Tokens can be included in level thresholds (as seen on Many Minds). Try '1-dahan','2-beast','3-wilds',etc.
+			speed: "fast" or "slow"
+		-->
+    <innate-powers>
+      <quick-innate-power
+        name="wells run thick with their own poison"
+        speed="slow"
+        range="0"
+        target="{town}/{city}"
+        target-title="TARGET LAND">
+        <level threshold="3-water,2-earth">
+          Replace 1 {town} with 1 {city} for every 2 Sequestered {blight}. 1 {fear}.
+        </level>
+        <level threshold="4-water,3-earth">
+          Replace 1 {city} with 1 {town} or 1 {town} with 1 {explorer}. 1 {fear}.
+        </level>
+        <level threshold="5-water,3-earth,1-animal">
+          1 Damage to each Invader.
+        </level>
+        <level threshold="2-water,1-earth">
+          Push up to 3 {explorer}/{town}.
+        </level>
+      </quick-innate-power>
+      <quick-innate-power
+      name="gradual filtration"
+      speed="fast"
+      range="none"
+      target="yourself"
+      target-title="TARGET">
+        <level threshold="3-water,1-plant">
+          Choose another Spirit. They gain 1 Energy.
+        </level>
+        <level threshold="4-water,1-plant">
+        Remove 1 Sequestered {blight} <i>(to the Blight Card)</i> or gain 1 Energy.
+        </level>
+        <level threshold="4-water,1-plant">
+        Remove 1 Sequestered {blight} <br> or gain 1 Energy.
+        <br>
+        The chosen Spirit gains 1 Energy.
+        </level>
+      </quick-innate-power>
+    </innate-powers>
+  </right>
+  </board>
+</body>
+
+</html>
