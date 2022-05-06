@@ -1,3 +1,10 @@
+body{
+  width: 1000px;
+  align-content: normal !important;
+  align-items: normal !important;
+  justify-content: normal !important;
+  margin: 0 !important;
+}
 
 rules icon.gain-range-1, rules icon.gain-range-2, rules icon.gain-range-3{
     width: 36px;
