@@ -24,7 +24,7 @@
   <board spirit-image="art-spirit.png" spirit-image-scale="100%"  spirit-border="art-tracks.png">
     
     <spirit-name>
-      Deep Springs
+      Deep Springs Cleanse the Spirit
     </spirit-name>
 	<artist-name>
 	wombo.art
@@ -34,13 +34,13 @@
       <div class="seq-cost-zone"><section-title>SPECIAL RULES</section-title> <span class="seq-cost">{seqcost}</span></div>
       <special-rules-subtitle>Sequestration</special-rules-subtitle>
       <special-rule>
-        Your abilities can Sequester {blight}. Move Sequestered {blight} to your spirit board. When available, place 1 Sequestered {blight} on each revealed {sequestration} on your presence tracks.
+        Your abilities can Sequester {blight}. Move Sequestered {blight} to your spirit board. Each revealed {sequestration} on your presence tracks can hold 1 Sequestered {blight}. Keep the rest here.
         <br>
         For each Sequestered {blight} not on your presence tracks, -1 Energy income/turn.
       </special-rule>
-      <special-rules-subtitle>Permeable Fractures</special-rules-subtitle>
+      <special-rules-subtitle>Gradual Filtration</special-rules-subtitle>
       <special-rule>
-        When targeting a land with a Power, you may Sequester 1 {blight} from target land to gain {gain-range-1} for that Power, before evaluating Range and targeting requirements.
+        At the end of each Spirit Phase, you may pay 1 Energy to remove 1 Sequestered {blight}. This is treated as if it were being removed from the island.
       </special-rule>
     </special-rules-container>
 
@@ -62,9 +62,9 @@
 
 		<presence-tracks>
 		  <energy-track banner="art-tracks.png" banner-v-scale="50%"
-        values="1,sequestration+2,sequestration+water,sequestration+3,sequestration+earth,sequestration+4,6"></energy-track>
+        values="1,2,sequestration+water,3,sequestration+plant,sequestration+4,6"></energy-track>
 		  <card-play-track banner="art-tracks.png" banner-v-scale="50%"
-        values="1,sequestration+2,3,sequestration+reclaim-one,4,sequestration+5"></card-play-track>
+        values="1,2,sequestration,3,sequestration+reclaim-one,4"></card-play-track>
 		</presence-tracks>
 
 		<!-- INNATE POWERS  
@@ -74,41 +74,38 @@
 		-->
     <innate-powers>
       <quick-innate-power
-        name="wells run thick with their own poison"
-        speed="slow"
-        range="0"
-        target="{town}/{city}"
+        name="Bolster the land"
+        speed="fast"
+        range="1"
+        target="any"
         target-title="TARGET LAND">
-        <level threshold="3-water,2-earth">
-          Replace 1 {town} with 1 {city} for every 2 Sequestered {blight}. 1 {fear}.
-        </level>
-        <level threshold="4-water,3-earth">
-          Replace 1 {city} with 1 {town} <br> or 1 {town} with 1 {explorer}. 1 {fear}.
-        </level>
-        <level threshold="5-water,3-earth,1-animal">
-          1 Damage to each Invader.
-        </level>
         <level threshold="2-water,1-earth">
-          Push up to 3 {explorer}/{town}.
+          Defend 2.
+        </level>
+        <level threshold="3-water,2-earth">
+          +1 Defend per {water}{earth} you have.
+        </level>
+        <level threshold="2-water,1-earth,2-plant">
+          Sequester up to 1 {blight} from target land.
+        </level>
+        <level threshold="4-water,2-earth,3-plant">
+          Sequester up to 1 {blight} from target or adjacent land.
         </level>
       </quick-innate-power>
       <quick-innate-power
-      name="gradual filtration"
+      name="Gift of Water's Connection"
       speed="fast"
       range="none"
       target="another {spirit}"
       target-title="TARGET">
-        <level threshold="3-water,1-plant">
-          Target Spirit gains 1 Energy.
+        <level threshold="2-water,1-plant">
+          You and target Spirit each gain 1 Energy.
         </level>
-        <level threshold="4-water,1-plant">
-        You gain 1 Energy or <br> Remove 1 Sequestered {blight}
-        <br> (to the Blight Card).
+        <level threshold="3-water,2-plant">
+          You and target Spirit each gain 1 element that the other has at least 1 of.
         </level>
-        <level threshold="5-water,2-plant">
-        You gain 1 Energy or <br> Remove 1 Sequestered {blight}.
-        <br>
-        Target Spirit gains 1 Energy.
+        <level threshold="2-sun,4-water,cost-1">
+          Repeat this Power.
         </level>
       </quick-innate-power>
     </innate-powers>

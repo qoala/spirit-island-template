@@ -13,7 +13,7 @@
     cost="0" 
     name="Boon of the Wellspring"
     image="art-card-wellspring.png"
-    elements="sun,water,plant"
+    elements="sun,air,water,plant"
     range="none"
     target="any {spirit}"
     target-title="TARGET"
@@ -31,7 +31,7 @@
     cost="0"
     name="Return to Headwaters"
     image="art-card-headwaters.png"
-    elements="water,earth,plant"
+    elements="moon,water,earth,plant"
     range="1"
     target="{no-blight}"
     artist-name="">
@@ -39,20 +39,21 @@
       Gather up to 2 {dahan}.
       <br>
       If {dahan} are then present,
-      one Spirit may add 1 of their Destroyed {presence}.
+      one Spirit may pay 1 Energy to add 1 of their Destroyed {presence}.
     </rules>
   </quick-card>
 
   <quick-card
     speed="slow"
-    cost="2"
-    name="Tainted Waters"
+    cost="3"
+    name="Release Tainted Water"
     image="art-card-taintedwater.png"
     elements="moon,water,earth,animal"
     range="0"
     target="ANY"
     artist-name="">
     <rules>
+      1 Damage to each {town}/{city}.
       1 Damage per Sequestered {blight}.
       <br>
       Move 1 Sequestered {blight} to target land.
@@ -62,15 +63,15 @@
   <quick-card
     speed="slow"
     cost="1"
-    name="Sudden Subsidence"
+    name="Subsidence of Drained Land"
     image="art-card-subsidence.png"
-    elements="air,water,earth"
-    range="0"
-    target="INVADERS"
+    elements="sun,water,earth"
+    range="1"
+    target="ANY"
     artist-name="">
     <rules>
-      2 {fear}.
-      Push up to 2 {explorer}/{town}.
+      Push up to 1 {explorer}/{town} per Sequestered {blight}.
+      Push up to 2 {dahan}.
     </rules>
   </quick-card>
 
