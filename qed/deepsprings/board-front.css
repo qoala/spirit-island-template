@@ -28,7 +28,7 @@ body{
 } */
 
 
-/* Presence Tracks*/
+/* Presence Tracks */
 
 presence-node icon.sequestration {
     /* Blight: 12mm, Presence 15mm, Track Circle 17mm */
@@ -41,3 +41,9 @@ presence-node icon-multi-element icon.sequestration {
     margin-top: -40px;
 }
 
+/* Innate Powers */
+
+innate-power.stacked{
+  position:absolute;
+  top: 300px;
+}

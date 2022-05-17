@@ -38,9 +38,9 @@
         <br>
         For each Sequestered {blight} not on your presence tracks, -1 Energy income/turn.
       </special-rule>
-      <special-rules-subtitle>Gradual Filtration</special-rules-subtitle>
+      <special-rules-subtitle>Steady Filtration</special-rules-subtitle>
       <special-rule>
-        At the end of each Spirit Phase, you may pay 1 Energy to remove 1 Sequestered {blight}. This is treated as if it were being removed from the island.
+        During each Spirit Phase, before gaining Energy, you may Sequester 1 {blight} from one of your lands.
       </special-rule>
     </special-rules-container>
 
@@ -85,18 +85,23 @@
         <level threshold="3-water,2-earth">
           +1 Defend per {water}{earth} you have.
         </level>
-        <level threshold="1-water,1-earth,1-plant">
-          Sequester 1 {blight} from target land.
-        </level>
-        <level threshold="2-water,1-earth,2-plant">
-          The {blight} may instead come from a land with your {presence}.
-        </level>
-        <level threshold="4-water,2-earth,3-plant" long>
-          Also, Sequester 1 {blight} from <br>target land or a land with your {presence}.
+        <level threshold="2-water,1-earth,1-plant">
+          You may Sequester 1 {blight}.
         </level>
       </quick-innate-power>
       <quick-innate-power
-      name="Connected Wells of Power"
+        name="Purify its water"
+        speed="slow stacked"
+        range="none"
+        target="you"
+        target-title="TARGET">
+        <level threshold="4-water,2-earth,2-plant" long>
+          Remove 1 Sequestered {blight}.<br>
+          The {blight} is treated as if it were removed from the island.
+        </level>
+      </quick-innate-power>
+      <quick-innate-power
+      name="Feed its connections"
       speed="fast"
       range="none"
       target="another {spirit}"
