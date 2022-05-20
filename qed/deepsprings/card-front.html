@@ -9,20 +9,19 @@
 <body>
 
   <quick-card 
-    speed="fast"
-    cost="0" 
+    speed="slow"
+    cost="0"
     name="Boon of the Wellspring"
     image="art-card-wellspring.png"
     elements="sun,air,water,plant"
     range="none"
-    target="any {spirit}"
+    target="ANY {spirit}"
     target-title="TARGET"
     artist-name="">
     <rules>
-      If you target another Spirit, they gain 1 Energy.
-      <br>
-      In one of target Spirit's lands:
-      Target Spirit gains {gain-range-1} when targeting from that land.
+      Target Spirit gains a Power Card.
+
+      If you target another Spirit, they may pay 1 Energy to add 1 of their Destroyed {presence} to one of your lands.
     </rules>
   </quick-card>
 
@@ -33,13 +32,11 @@
     image="art-card-headwaters.png"
     elements="sun,water,earth,plant"
     range="1"
-    target="{no-blight}"
+    target="ANY"
     artist-name="">
     <rules>
       Gather up to 2 {dahan}.
-      <br>
-      If {dahan} are then present,
-      one Spirit may pay 1 Energy to add 1 of their Destroyed {presence}.
+      Push up to 1 {blight} to a land with your {presence}.
     </rules>
   </quick-card>
 
