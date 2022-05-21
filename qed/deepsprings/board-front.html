@@ -56,9 +56,9 @@
 
 		<presence-tracks>
 		  <energy-track banner="art-tracks.png" banner-v-scale="50%"
-        values="2,3,earth,4,water,5+earth,6"></energy-track>
+        values="2,3,water,4,plant,5+water,6"></energy-track>
 		  <card-play-track banner="art-tracks.png" banner-v-scale="50%"
-        values="1,gather(blight),2,plant,3,4"></card-play-track>
+        values="1,gather(blight),2,earth,3,4"></card-play-track>
 		</presence-tracks>
 
 		<!-- INNATE POWERS  
@@ -74,13 +74,13 @@
         target="any"
         target-title="TARGET LAND"
         note="Move all Sequestered {blight} to target land. (Moving {blight} doesn't cascade or Destroy {presence})">
-        <level threshold="1-water,2-earth">
+        <level threshold="2-water,1-earth">
           1 Damage per {blight}.
         </level>
-        <level threshold="2-water,3-earth">
+        <level threshold="3-water,2-earth">
           1 Damage to each {town}/{city}.
         </level>
-        <level threshold="3-water,4-earth">
+        <level threshold="4-water,3-earth">
           Push up to 1 {blight} to each adjacent land. In lands you Pushed {blight} to, <br> 2 Damage.
         </level>
       </quick-innate-power>
@@ -90,13 +90,13 @@
       range="none"
       target="you"
       target-title="TARGET">
-        <level threshold="2-earth,1-plant">
+        <level threshold="2-water,1-plant">
           Sequester 1 {blight} from <br> one of your lands.
         </level>
-        <level threshold="3-earth,2-plant">
+        <level threshold="3-water,2-plant">
           You may Remove 1 Sequestered {blight} (to the Blight Card).
         </level>
-        <level threshold="4-earth,3-plant">
+        <level threshold="4-water,3-plant">
           Sequester 1 {blight} from <br> one of your lands.
         </level>
       </quick-innate-power>
