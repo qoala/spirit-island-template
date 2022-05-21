@@ -1,9 +1,10 @@
 Sequestration (SR)
 * Your abilities may Sequester {blight}. Move Sequestered {blight} to your spirit board.
+* Setup (lore side): Sequester 1 {blight} (from the box) on you spirit board.
 
 Release Tainted Waters (innate)
 * Speed: slow, Range: 0
-* note: Move all Sequestered {blight} to target land (moving {blight} doesn't destroy {presence} or cause cascades).
+* (always) Move all Sequestered {blight} to target land (moving {blight} doesn't destroy {presence} or cause cascades).
 * (level 1) 1 damage per {blight}.
 * (level 2) 1 damage to each building.
 * (level 3) Push any number of {blight} to different lands. 2 Damage in lands pushed to.
@@ -15,18 +16,18 @@ Gradual Filtration (innate)
 * (level 3) Sequester 1 {blight} from one of your lands.
 
 Bolster the Land (unique)
-* Cost: 1, Speed: fast, Range: 1
+* Cost: 2, Speed: fast, Range: 1
 * Defend 4. Sequester 1 {blight}.
 
-Aggressive Capture (unique)
+Engulfed by the Earth (unique)
 * Cost: 2, Speed: slow, Range: 1
 * 2 Damage.
 * Sequester 1 {blight}.
-* Push 2 Dahan.
+* Push 2 {dahan}.
 
 Return to Headwaters (unique)
 * Cost: 0, Speed: slow, Range: 1
-* Gather up to 2 Dahan.
+* Gather up to 2 {dahan}.
 * Push up to 1 {blight} to a land with your {presence}.
 
 Boon of the Wellspring (unique)
