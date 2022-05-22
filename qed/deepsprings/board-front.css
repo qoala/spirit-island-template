@@ -2,6 +2,10 @@ body{
   margin: 0 !important;
 }
 
+spirit-name, section-title, growth sub-section-title, .non-icon, growth-cell div.custom-scaling, info-title, innate-info, threshold-or {
+  font-family: 'Mouse Memoirs' !important;
+}
+
 /* Special Rules */
 
 /* Growth */
