@@ -10,16 +10,15 @@
 
   <quick-card
     speed="fast"
-    cost="2"
+    cost="1"
     name="Bolster the Land"
     image="art-card-regrowth.png"
-    elements="sun,water,earth,plant"
+    elements="sun,water,earth"
     range="1"
     target="ANY"
     artist-name="">
     <rules>
       Defend 4.
-      You may Sequester 1 {blight}.
     </rules>
   </quick-card>
 
@@ -28,14 +27,13 @@
     cost="2"
     name="Engulfed by the earth"
     image="art-card-taintedwater.png"
-    elements="fire,water,earth"
+    elements="fire,water,plant"
     range="1"
     target="ANY"
     artist-name="">
     <rules>
       2 Damage.
-      Sequester 1 {blight}.
-      Push 2 {dahan}.
+      Gather up to 1 {blight}.
     </rules>
   </quick-card>
 
@@ -57,17 +55,18 @@
   </quick-card>
 
   <quick-card
-    speed="slow"
+    speed="fast"
     cost="0"
-    name="Return to Headwaters"
+    name="Entrap"
     image="art-card-headwaters.png"
-    elements="moon,water,plant"
+    elements="moon,water,earth,plant"
     range="1"
     target="ANY"
     artist-name="">
     <rules>
-      Gather up to 2 {dahan}.
-      Push up to 1 {blight} to a land with your {presence}.
+      Isolate target land.
+      Gather up to 1 {blight}.
+      If {blight} and Invaders are present, 2 {fear}.
     </rules>
   </quick-card>
 
