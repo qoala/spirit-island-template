@@ -32,13 +32,14 @@
 
     <special-rules-container>
       <section-title>SPECIAL RULES</section-title>
-      <special-rules-subtitle>Sequestration</special-rules-subtitle>
+      <special-rules-subtitle>Deep Sequestration</special-rules-subtitle>
       <special-rule>
-        Your abilities can Sequester {blight}. Move Sequestered {blight} to your spirit board.
+        When {blight} is added to your {sacred-site}, it does not cascade. (It still destroys {presence}.)
+        Otherwise, all {blight} at your {sacred-site} may be ignored. (Decide per Action.)
       </special-rule>
-      <special-rules-subtitle>Deep Filtration</special-rules-subtitle>
+      <special-rules-subtitle>Gradual Filtration</special-rules-subtitle>
       <special-rule>
-        During the Spirit Phase, each of your {sacred-site} Sequesters 1 {blight} or Gathers 1 {blight} in its land.
+        During the Spirit Phase, each of your {sacred-site} may Gather 1 {blight}.
       </special-rule>
       <special-rules-subtitle>Subsurface Connections</special-rules-subtitle>
       <special-rule>
@@ -78,25 +79,24 @@
       <quick-innate-power
         name="Release Tainted Waters"
         speed="slow"
-        range="0"
+        range="sacred-site,blight,1"
         target="any"
-        target-title="TARGET LAND"
-        note="This Power requires at least 1 Sequestered {blight}.">
+        target-title="TARGET LAND">
         <level threshold="2-water,1-earth">
-          Move all Sequestered {blight} to target land.
-          1 Damage per {blight} moved.
-          (Moving {blight} doesn't cascade or Destroy {presence})
+          Gather 1 {blight}.
+          If {blight} is present, <br> 1 Damage.
         </level>
         <level threshold="3-water,2-earth">
-          2 Damage.
+          Move all {blight} from origin to target land.
+          1 Damage per {blight}.
         </level>
         <level threshold="4-water,3-earth">
           1 Damage to each {town}/{city}.
-          Sequester 2 {blight}.
+          Push up to 2 {blight} to lands with your {presence}.
         </level>
       </quick-innate-power>
       <quick-innate-power
-        name="TBD"
+        name="Leach Fields"
         speed="fast"
         range="none"
         target="you"
