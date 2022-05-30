@@ -1,3 +1,20 @@
+
+(General)
+1. Was it fun?
+2. Does the spirit fight invaders in an unique/distinct way?
+3. Do the special rule(s) and innate power(s) fit the theme?
+4. Are the unique and right-innate powers interesting?
+5. Is there any superfluous/unnecessary part?
+(Specifics)
+6. How large did you get the blight-pile for Tainted Waters? Did it plateau at any notable points (possibly growing again later)?
+7. How do the right-innate thresholds feel?
+8. Is the blight movement on both 3rd-level innates meaningful and/or overpowered?
+9. Do you ever want to use 3rd-level Leach Fields in a land without invaders?
+* If on board F with F7 on the edge of the map (especially solo), is starting in a corner with limited adjacency problematic?
+* If Festering Pits of Blight (event) occurs, what happened?
+
+----
+
 Sequestration (SR)
 * Your abilities may Sequester {blight}. Move Sequestered {blight} to your spirit board.
 * Setup (lore side): Sequester 1 {blight} (from the box) on you spirit board.

@@ -10,6 +10,13 @@ spirit-name, section-title, growth sub-section-title, .non-icon, growth-cell div
 
 /* Growth */
 
+growth-cell custom-icon icon.destroyed-presence {
+  /* Reassert 'custom-icon .token' over 'growth-cell icon.destroyed-presence' */
+  width: 40px;
+  height: 35px;
+  margin-bottom: -3px;
+}
+
 /* growth section-title{
     padding-top: 20px;
 } */
