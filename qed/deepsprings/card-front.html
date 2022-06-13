@@ -10,17 +10,18 @@
 
   <quick-card
     speed="fast"
-    cost="1"
-    name="Bolster the Land"
-    image="art-card-regrowth.png"
-    elements="sun,moon,water,earth"
-    range="1"
-    target="ANY"
+    cost="2"
+    name="Seep into their wells"
+    image="../../_examples/card/example2.png"
+    elements="moon,water,earth,animal"
+    range="0"
+    target="{town}/{city}"
     artist-name="">
     <rules>
-      Defend 4.
-
-      Push up to 1 {blight} to a land with your {presence}.
+      1 {fear}. Invaders do not build in target land this turn.
+      {or}
+      If target land has {blight},
+      Destroy 1 {town}.
     </rules>
   </quick-card>
 
@@ -29,7 +30,7 @@
     cost="2"
     name="Engulfed by the earth"
     image="art-card-taintedwater.png"
-    elements="fire,water,plant"
+    elements="fire,water,earth"
     range="0"
     target="ANY"
     artist-name="">
@@ -62,7 +63,7 @@
     cost="0"
     name="Darkened Streams"
     image="../../_examples/card/example3.png"
-    elements="water,earth,plant,animal"
+    elements="water,earth,plant"
     range="presence,blight,1"
     target="ANY"
     artist-name="">
