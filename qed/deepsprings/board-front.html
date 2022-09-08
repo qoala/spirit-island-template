@@ -66,7 +66,7 @@
 
 		<presence-tracks>
 		  <energy-track banner="art-tracks.png" banner-v-scale="50%"
-        values="1,2,earth,3,water,4,5"></energy-track>
+        values="1,2,earth,3,4,water,5"></energy-track>
 		  <card-play-track banner="art-tracks.png" banner-v-scale="50%"
         values="1,2,gather(blight),3,plant,4"></card-play-track>
 		</presence-tracks>
@@ -78,7 +78,7 @@
 		-->
     <innate-powers>
       <quick-innate-power
-        name="Release Tainted Waters"
+        name="Release a Flood of Tainted Waters"
         speed="slow"
         range="sacred-site,blight,1"
         target="any"
@@ -92,13 +92,13 @@
           1 Damage per {blight}.
         </level>
         <level threshold="4-water,3-earth,1-animal">
-          1 Damage to each {town}/{city}.
+          1 Damage to each Invader.
           <br/>
           Push up to 2 {blight}.
         </level>
       </quick-innate-power>
       <quick-innate-power
-        name="Bolster the Land"
+        name="Nurture Vitality through Clean Aquifers"
         speed="fast"
         range="1"
         target="any"
@@ -110,7 +110,7 @@
           +2 Defend. <i>(Defend 4)</i>
         </level>
         <level threshold="2-water,4-earth,3-plant">
-          +3 Defend. <i>(Defend 7)</i>
+          In adjacent lands <br/>without {blight}, Defend 4.
         </level>
       </quick-innate-power>
     </innate-powers>

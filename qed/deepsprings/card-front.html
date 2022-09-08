@@ -10,18 +10,17 @@
 
   <quick-card
     speed="fast"
-    cost="2"
+    cost="1"
     name="Seep into their wells"
     image="../../_examples/card/example2.png"
     elements="moon,water,earth,animal"
     range="0"
-    target="{town}/{city}"
+    target="{blight}"
     artist-name="">
     <rules>
-      1 {fear}. Invaders do not build in target land this turn.
-      {or}
-      If target land has {blight},
-      Destroy 1 {town}.
+      Invaders do not build in target land this turn.
+
+      1 {fear} per {town}/{city} (max. 3).
     </rules>
   </quick-card>
 
